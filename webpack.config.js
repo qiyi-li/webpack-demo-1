@@ -13,9 +13,12 @@ module.exports = {
         contentBase: "./dist"
     },
     module: {
-        rules: [{
-            test: /\.css$/,
-            use: ["style-loader", "css-loader"]
-        }]
+        rules: [
+            ...base.module.rules,
+            {
+                test: /\.css$/,
+                use: ["style-loader", "css-loader"]
+            }
+        ]
     }
 };

@@ -17,16 +17,19 @@ module.exports = {
     })
   ],
   module: {
-    rules: [{
-      test: /\.css$/,
-      use: [{
-          loader: MiniCssExtractPlugin.loader,
-          options: {
-            publicPath: "/public/path/to/"
-          }
-        },
-        "css-loader"
-      ]
-    }]
+    rules: [
+      ...base.module.rules,
+      {
+        test: /\.css$/,
+        use: [{
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              publicPath: "/public/path/to/"
+            }
+          },
+          "css-loader"
+        ]
+      }
+    ]
   }
 };
