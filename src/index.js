@@ -1,5 +1,5 @@
 import x from "./x.js";
-import png from "./assets/2.png";
+// import png from "./assets/2.png";
 
 const div = document.getElementById("app");
 // div.innerHTML = `
