@@ -1,9 +1,9 @@
 import x from "./x.js";
-import jpg from "./assets/1.jpg";
+import png from "./assets/2.png";
 
 const div = document.getElementById("app");
 div.innerHTML = `
-    <img width=50% src = "${jpg}">
+    <img height=500px src = "${png}">
 `;
 
 const button = document.createElement('button')
